@@ -8,20 +8,28 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
 
 .header {
     background: #1F2937;
-    color: white;
+    color: #F9FAF8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 100px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 50px;
 }
 
 .logo {
-    font-size:20px;
+    font-size:24px;
     font-weight: 700;
+    
 }
 
 .right-links {
@@ -58,6 +66,11 @@ body {
     opacity: 50%
 }
 
+.left-container button:hover {
+    background-color: pink;
+    transition: 0.7s;
+    }
+
 .left-container button {
     width: 100px;
     background: #3882F6;
@@ -80,8 +93,197 @@ body {
     margin: 15px;
 }
 
+.section.container-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .info {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.photogrid.container {
+    display: flex;
+    gap: 8rem;
+    margin: 50px;
+    justify-content: space-evenly;
+}
+
+.photogrid .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+.photo {
+    border:3px solid #3882F6;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.section.container-3 {
+    background: #E5E7EB;
+    padding: 100px 80px 100px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerquote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 1500px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.author {
+    display: flex;
+    width: auto;
+    align-self: flex-end;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.section.container-4 {
+    height:auto; 
+    font-size: 26px;
+    padding: 100px 150px;
+}
+
+.sign-up.container {
+    background: #3882F6;
+    color: #E5E7EB;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right.item1 {
+    font-size:30px;
+}
+
+.right.item2 {
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.left button:hover {
+    background-color: pink;
+    transition: 0.7s;
+    }
+
+.left button {
+    background: none;
+    border: 2px solid #E5E7EB;
+    color: #E5E7EB;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #1F2937;
+    color: #E5E7EB;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+@media (min-width: 1700px) { /*if viewport at 60-100*/
+   
+}
+@media (min-width: 1500px) { /*if viewport at 50-60%*/
+    .logo {
+        font-size: 50px;
+    }
+
+    .right-links {
+        font-size: 30px;
+    }
+    .section.container-1 {
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+
+    .awesome.text {
+        font-size: 90px;
+    }
+
+    .awesome.subtext {
+        font-size: 30px;
+    }
+
+    .right.container {
+        width: 700px;
+        height: 500px;
+    }
+
+    .left-container button {
+        font-size: 25px;
+        width: 200px;
+        padding: 20px 20px;
+    }
+
+    .section.container-2 {
+        height: 900px;
+    }
+
+    .section .info {
+        font-size: 100px;
+    }
+
+    .photogrid.container {
+        width: auto;
+        height: auto;
+    }
+
+    .photogrid .item {
+        width: 300px;
+        height: 300px;
+    }
+
+    .photogrid .photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .photogrid .subtext {
+        font-size: 30px;
+    }
+
+    .section.container-3 {
+        height: 600px;
+    }
+
+    .section .quote {
+        font-size: 50px;
+    }
+}
 @media (max-width: 900px) { /*if viewport gets smaller */
-    .section.section.container-1 {
+    .section.container-1 {
         display: flex;
         flex-wrap: wrap;
     }
@@ -90,4 +292,10 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .photogrid.container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
